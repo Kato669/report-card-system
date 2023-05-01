@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+}
+/* styling navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #07080a;
+    padding: 10px;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+}
+/* styling links */
+.navbar .links ul{
+    list-style: none;
+    display: flex;
+    padding: 10px;
+   
+}
+.navbar .links ul li a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #fff;
+    text-transform: capitalize;
+    transition: all .5s;
+    font-weight: 900;
+}
+.navbar .links ul li a:hover{
+    color: #10ac84;
+}
+/* styling the navbar text */
+.navbar .srms a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* styling calender */
+.calender{
+    width: 95%;
+    margin: 6px auto;
+    height: 90vh;
+    /* padding-top: 50px; */
+}
+/* styling calender ends */
+/* styling footer */
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #07080a;
+}
+footer p{
+    color: #fff;
+    text-transform: capitalize;
+    font-family: inherit;
+
+}

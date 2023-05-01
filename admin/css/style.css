@@ -1,0 +1,481 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 40px;
+    overflow-x: hidden;
+    background-color: #dfe6e9;
+    
+}
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #0d1833;
+}
+.navbar p{
+    color: #fff;
+}
+/* navbar left */
+.navbar .left{
+    display: flex;
+}
+.navbar .left .text{
+    font-size: 1.1rem;
+}
+.navbar .left .icons{
+    padding: 0 100px;
+    cursor: pointer;
+    color: darkgreen;
+}
+
+/* navbar right */
+.navbar .right{
+    color: brown;
+    padding: 0 100px;
+}
+
+/* designing left side */
+.leftbar{
+    width: 280px;
+    background-color: #0d1833;
+    height: 100%;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    position: fixed;
+}
+.leftbar p{
+    padding: 15px 0 10px 20px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #fff;
+    opacity: .3;
+
+}
+
+
+
+
+/* error */
+.error{
+    color: red !important;
+}
+
+
+
+
+
+
+
+/* styling sect */
+.sect{
+    padding: 0 10px;
+    background-color: transparent;
+    transition: all .5s;
+    position: relative;
+}
+.sect:hover{
+    background-color: #2d3436;
+    padding: 10px 0 10px 30px;
+}
+.sect a{
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.sect a .text{
+    padding: 0 10px;
+    text-transform: capitalize;
+}
+.sect a .icon{
+    padding:  0 20px 0 0;
+}
+.sect a .icon i{
+    position: absolute;
+    right: 10px;
+}
+.iconshow{
+    display: block;
+}
+.iconshow.active{
+    display: none;
+}
+.iconhide{
+    display: none;
+}
+.iconhide.active{
+    display: block;
+}
+/* styling subicon */
+.sect a .subicon{
+    padding: 0px 35px;
+    text-transform: capitalize;
+}
+.sect a .subicon i{
+    padding: 0 10px 0 0 ;
+}
+
+.dispalyed{
+    display: none;
+}
+.dispalyed.active{
+    display: block;
+}
+
+/* ==================show and hide================ */
+/* styling class */
+.displayed{
+    display: none;
+    transition: all .6s;
+    padding-bottom: 15px;
+}
+.displayed.active{
+    display: block;
+}
+.showclass{
+    display: block;
+}
+.showclass.active{
+    display: none;
+}
+.hideclass{
+    display: none;
+}
+.hideclass.active{
+    display: block;
+}
+/* styling class ends */
+
+/* styling subjects */
+.dispsubj{
+    display: none;
+}
+.dispsubj.active{
+    display: block;
+}
+.showsubj{
+    display: block;
+}
+.showsubj.active{
+    display: none;
+}
+.hidesubj{
+    display: none;
+}
+.hidesubj.active{
+    display: block;
+}
+/*ends styling subjects */
+/*styling student */
+.dispstdnt{
+    display: none;
+}
+.dispstdnt.active{
+    display: block;
+}
+.showstdnt{
+    display: block;
+}
+.showstdnt.active{
+    display: none;
+}
+.hidestdnt{
+    display: none;
+}
+.hidestdnt.active{
+    display: block;
+}
+/*ends styling student */
+/* styling results */
+.disprslts{
+    display: none;
+}
+.disprslts.active{
+    display: block;
+}
+.showrslts{
+    display: block;
+}
+.showrslts.active{
+    display: none;
+}
+.hiderslts{
+    display: none;
+}
+.hiderslts.active{
+    display: block;
+}
+/* styling results ends */
+/* ==================end show and hide================ */
+
+/*styling rightbar */
+.rightbar{
+    width: calc(100% - 280px);
+    height: 100vh;
+    background-color: #dfe6e9;
+    position: absolute;
+    left: 280px;
+    top: 30px;
+    /* padding: 50px 10px; */
+   
+}
+.rightbar .top{
+    background-color: #fff !important;
+    padding: 50px 10px 6px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    /* max-height: 20vh; */
+    font-weight: 900;
+    /* z-index: 10000; */
+}
+
+/* styling bottom */
+.bottom{
+    margin: 20px;
+    position: relative;
+    width: 100%;
+    padding: 0 20px;
+}
+.stdntsbjct{
+    display: flex;
+    width: 100%;
+}
+.stdntsbjct .regstdnt{
+    width: 45%;
+    background-color: #34ace0;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: all .5s;
+}
+.stdntsbjct .regstdnt:hover{
+    background-color: #192a56;
+}
+.stdntsbjct .subject:hover{
+    background-color: #2f3640;
+}
+.subject{
+    width: 45%;
+    background-color: #c23616;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: all .5s;
+}
+.results{
+    width: 45%;
+    background-color: #1e272e;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: all .5s;
+}
+.results:hover{
+    background-color: #3742fa;
+}
+.classlisted{
+    width: 45%;
+    background-color: #009432;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    margin-left: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: all .5s;
+}
+.classlisted:hover{
+    background-color: #006266;
+}
+.regstdnt .left span i, .subject .left span i, .classlisted .left span i, .results .left span i{
+    color: #fff;
+    font-size: 4rem;
+} 
+.regstdnt .right, .subject .right, .classlisted .right, .results .right{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #fff;
+    
+}
+.regstdnt .right .txt, .subject .right .txt, .classlisted .right .txt, .results .right .txt{
+    font-size: 2rem;
+    color: 2rem;
+}
+
+/* styling table */
+table.display{
+    width: 90%;
+    margin: 15px auto;
+}
+/* styling table end*/
+
+/* styling manage admin */
+h3{
+    padding: 10px 0;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+/* delete and edit */
+.delete{
+    background-color: red;
+    cursor: pointer;
+    padding: 4px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff !important;
+}
+.primary{
+    background-color: #1e90ff;
+    cursor: pointer;
+    padding: 4px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff !important;
+}
+.success{
+    background-color: #218c74;
+    cursor: pointer;
+    padding: 4px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff !important;
+}
+
+
+
+/* styling notificatios */
+/* user exists */
+.userExists{
+    color: red;
+    font-size: 1rem;
+    text-transform: capitalize;
+    position: absolute;
+    letter-spacing: 3px;
+    left: 45%;
+    top: 20%;
+    transform: translateY(-1000%);
+    transition: all .5s;
+    font-weight: 900;
+}
+.userExists.active{
+    transform: translateY(-100%);
+}
+
+/* admin added */
+.added{
+    color: green;
+    font-size: 1rem;
+    text-transform: capitalize;
+    position: absolute;
+    letter-spacing: 3px;
+    left: 45%;
+    top: 20%;
+    transform: translateY(-1000%);
+    transition: all .5s;
+    font-weight: 900;
+}
+.added.active{
+    transform: translateY(-100%);
+}
+.admindeleted, .update, .password, .psw-not-match{
+    color: green;
+    font-size: 1rem;
+    text-transform: capitalize;
+    position: absolute;
+    letter-spacing: 3px;
+    left: 45%;
+    top: 20%;
+    transform: translateY(-1000%);
+    transition: all .5s;
+    font-weight: 900;
+}
+.psw-not-match.active{
+    transform: translateY(-100%);
+}
+.password{
+    transform: translateY(-100%);
+}
+.admindeleted.active{
+    transform: translateY(-100%);
+}
+.update.active{
+    transform: translateY(-100%);
+}
+
+/* update */
+.update1{
+    text-transform: capitalize;
+    font-size: 1.4rem;
+}
+
+/* styling breadcrumb */
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    font-size: .9rem;
+    padding: 5px ;
+    opacity: .4;
+}
+.breadcrumb li, .breadcrumb li a{
+    color: grey;
+    padding: 0 4px;
+    text-decoration: none;
+
+}
+/* styling breadcrumb end */
+
+/* styling form */
+form{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 50%;
+    margin: auto;
+}
+form h4{
+    text-transform: capitalize;
+    padding: 4px 0;
+    opacity: .3;
+    font-size: .9rem;
+}
+form label, form .hint{
+    color: grey;
+    font-weight: 100;
+    opacity: .7;
+}
+form input{
+    outline: none;
+    text-transform: capitalize;
+}
