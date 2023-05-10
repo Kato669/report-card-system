@@ -7,3 +7,5 @@
 . <b>Ajax</b><br>
 . <b>MySqli</b>: Database Used<br>
 . <b>Php</b>: Does the functionalities
+
+
