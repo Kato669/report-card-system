@@ -26,15 +26,15 @@ This is a Simple Student Report-card System in PHP/Mysql intended to help progra
    <li>search student</li>
    <li>Add Student marks</li>
    <li>Edit marks</li>
-</ul><br>
-#### How to Run<br>
-##### Requirements <br>
+</ul>
+How to Run <br>
+ Requirements
 <ul>
   <li><b>Download</b> and <b>Install</b> any local web server such as XAMPP/WAMP.</li>
   <li>Download the project</li>
 </ul>
 
-##### <b>Installation/Setup</b> <br>
+##### Installation/Setup <br>
 
 <ol>
   <li>Open your XAMPP/WAMP's Control Panel and start the "Apache" and "MySQL".</li>
