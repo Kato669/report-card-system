@@ -27,20 +27,20 @@ This is a Simple Student Report-card System in PHP/Mysql intended to help progra
    <li>Add Student marks</li>
    <li>Edit marks</li>
 </ul><br>
-#### <b>How to Run</b> <br>
-##### **Requirements** <br>
+#### How to Run<br>
+##### Requirements <br>
 <ul>
   <li><b>Download</b> and <b>Install</b> any local web server such as XAMPP/WAMP.</li>
   <li>Download the project</li>
 </ul>
 
-##### **Installation/Setup** <br>
+##### <b>Installation/Setup</b> <br>
 
 <ol>
-  <li>Open your **XAMPP/WAMP's** Control Panel and start the "Apache" and "MySQL".</li>
+  <li>Open your XAMPP/WAMP's Control Panel and start the "Apache" and "MySQL".</li>
   <li>**Extract** the downloaded source code file.</li>
-  <li>If you are using **XAMPP**, copy the extracted source code folder and paste it into the XAMPP's "htdocs" directory. And If you are using WAMP, paste it into the "www" directory.</li>
-  <li>Browse the **PHPMyAdmin** in a browser. i.e. http://localhost/phpmyadmin</li>
+  <li>If you are using XAMPP copy the extracted source code folder and paste it into the XAMPP's "htdocs" directory. And If you are using WAMP, paste it into the "www" directory.</li>
+  <li>Browse the PHPMyAdmin in a browser. i.e. http://localhost/phpmyadmin</li>
   <li>Create a new database naming "report-card".</li>
   <li>Import the provided SQL file. The file is known as "reports.sql"</li>
   <li>Browse the Simple Student Report System in a browser. i.e. http://localhost/rmss</li>
